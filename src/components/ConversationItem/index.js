@@ -3,15 +3,16 @@ import { CiMenuKebab } from "react-icons/ci";
 import { MdKeyboardVoice } from "react-icons/md";
 import { IoLogOutOutline } from "react-icons/io5";
 import Cookies from "js-cookie";
-import { Redirect } from "react-router-dom";
+import {withRouter } from "react-router-dom";
 import './index.css'
 
 const ConversationItem=(props)=>{
     const {userConversation}=props 
     const {name, message,profile}=userConversation
+    const {history}=props 
     const logOutBtn=()=>{
         Cookies.remove("loginStatus")
-        return <Redirect to="/login"/>
+        history.replace('/login')
     }
     return(
         <>
@@ -42,4 +43,4 @@ const ConversationItem=(props)=>{
     )
 }
 
-export default ConversationItem
+export default withRouter(ConversationItem)
