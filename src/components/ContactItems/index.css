@@ -1,0 +1,59 @@
+*{
+    font-family: 'Roboto';
+}
+li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    height: 100px;
+}
+li:hover{
+    background-color: #6f6f6f;
+}
+.profile-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.profile-head{
+    color: white;
+    font-size: 19px;
+}
+
+.profile-msg{
+    color: #d1d7db;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+.profile-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 100%;
+    min-width: 240px;
+    margin: 10px;
+}
+
+.horizontal-line{
+    margin: 5px;
+    color:#202c33 ;
+}
+
+.profile-msg-time{
+    align-self: flex-end;
+    width: 100%;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.link-text{
+    text-decoration: none;
+}

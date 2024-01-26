@@ -1,0 +1,20 @@
+.navbar-container{
+    background-color: #202c33;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-icon{
+    color: #aebac1;
+    margin: 10px;
+    font-size:34px;
+    cursor: pointer;
+    outline: none;
+}
+
+.icons-container{
+    display: flex;
+}
